@@ -38,7 +38,8 @@
       "Bash(git rm *)",
       "Bash(git clean *)",
       "Bash(rm -r \"c:\\\\Users\\\\D862\\\\OneDrive - IBsolution GmbH\\\\Desktop\\\\UI5_Quellcode\\\\restaurant\\\\themes\\\\hugo-hero-theme\\\\.git\")",
-      "Bash(rm \".gitmodules\" && git status --short | head -20)"
+      "Bash(rm \".gitmodules\" && git status --short | head -20)",
+      "Bash(git config *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant\\themes\\hugo-hero-theme",
