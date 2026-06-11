@@ -39,11 +39,14 @@
       "Bash(git clean *)",
       "Bash(rm -r \"c:\\\\Users\\\\D862\\\\OneDrive - IBsolution GmbH\\\\Desktop\\\\UI5_Quellcode\\\\restaurant\\\\themes\\\\hugo-hero-theme\\\\.git\")",
       "Bash(rm \".gitmodules\" && git status --short | head -20)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(git ls-tree *)",
+      "Bash(rm -rf .git/modules && git config --file .git/config --remove-section submodule.themes/hugo-hero-theme 2>/dev/null; echo \"Cleaned up submodule references\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant\\themes\\hugo-hero-theme",
-      "C:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant"
+      "C:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant",
+      "C:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant\\.git\\modules"
     ]
   }
 }
