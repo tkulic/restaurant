@@ -1,0 +1,82 @@
+baseURL = "https://restaurant.netlify.app/"
+title = "Konoba Dalmatina"
+theme = "hugo-hero-theme"
+
+defaultContentLanguage = "hr"
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = true
+enableEmoji = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+[languages]
+  [languages.hr]
+    label = "HR"
+    weight = 1
+    title = "Konoba Dalmatina"
+
+    [[languages.hr.menu.main]]
+      name = "Jelovnik"
+      url = "/jelovnik/"
+      weight = 1
+
+    [[languages.hr.menu.main]]
+      name = "O nama"
+      url = "/o-nama/"
+      weight = 2
+
+    [[languages.hr.menu.main]]
+      name = "Kontakt"
+      url = "/kontakt/"
+      weight = 3
+
+  [languages.en]
+    label = "EN"
+    weight = 2
+    title = "Konoba Dalmatina"
+
+    [[languages.en.menu.main]]
+      name = "Menu"
+      url = "/en/menu/"
+      weight = 1
+
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/en/about/"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "/en/contact/"
+      weight = 3
+
+[params]
+  google_analytics_id = ""
+
+  [params.logo]
+    mobile = "images/logo-mobile.svg"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "images/logo.svg"
+    desktop_height = "36px"
+    desktop_width = "200px"
+    alt = "Konoba Dalmatina"
+
+  [params.homepage_meta_tags]
+    meta_description = "Autentična dalmatinska kuhinja u srcu Splita. Svježa riba, morski plodovi i tradicionalni specijaliteti."
+    meta_og_title = "Konoba Dalmatina"
+    meta_og_type = "website"
+    meta_og_url = "https://restaurant.netlify.app"
+    meta_og_image = "images/hero.jpg"
+    meta_og_description = "Autentična dalmatinska kuhinja u srcu Splita."
+    meta_twitter_card = "summary_large_image"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[security]
+  enableInlineShortcodes = true

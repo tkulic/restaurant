@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(hugo server *)",
+      "Bash(curl -s http://localhost:1313/)",
+      "Bash(curl -L -o \"cormorant-garamond-400.woff2\" \"https://fonts.gstatic.com/s/cormorantgaramond/v22/7Au6p_kt_igiMx0d5Fv0WW02Zs5t2KBbnT-mC01WW5A.woff2\")",
+      "Bash(curl -L -o \"cormorant-garamond-700.woff2\" \"https://fonts.gstatic.com/s/cormorantgaramond/v22/-_HrMLdIEcnfPAGDu_9X1nvPdsKrlzH0qHITQRZ2yQM.woff2\")",
+      "Bash(curl -L -o \"merriweather-400.woff2\" \"https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5-_xpOcVU29dw.woff2\")",
+      "Bash(curl -L -o \"merriweather-700.woff2\" \"https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvoYK_l5-_xpOcVU29dw.woff2\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git reset *)",
+      "Bash(git update-ref *)",
+      "Bash(xargs grep -l \"define.*main\")",
+      "Bash(curl -s http://localhost:58315/)",
+      "Bash(curl -s http://localhost:58470/)",
+      "WebFetch(domain:www.freepik.com)",
+      "WebFetch(domain:www.flaticon.com)",
+      "WebFetch(domain:www.pixabay.com)",
+      "Bash(curl -s http://localhost:63410/)",
+      "Bash(curl -s http://localhost:63410/restaurants/pasarela/)",
+      "Bash(curl -s http://localhost:63410/restaurants/pasarela/kontakt/)",
+      "PowerShell(grep contact)",
+      "Bash(git checkout *)",
+      "Bash(curl -s http://localhost:64499/)",
+      "Bash(curl -s http://localhost:53992/)",
+      "Bash(git commit -m 'Customize for Konoba Fetivi *)",
+      "Bash(curl -I http://localhost:63067/)",
+      "Bash(git branch *)",
+      "Bash(curl -s http://localhost:1313/fetivi/)",
+      "Bash(awk '{print $2}')",
+      "Bash(xargs kill -9)",
+      "Read(//c/Users/D862/AppData/Local/Temp/claude/c--Users-D862-OneDrive---IBsolution-GmbH-Desktop-UI5_Quellcode-restaurant/66416427-0492-4a47-a330-cdc4d99e5726/tasks/**)",
+      "Bash(curl -s http://localhost:1313/hvaranin/)",
+      "WebSearch",
+      "Bash(git rm *)",
+      "Bash(git clean *)",
+      "Bash(rm -r \"c:\\\\Users\\\\D862\\\\OneDrive - IBsolution GmbH\\\\Desktop\\\\UI5_Quellcode\\\\restaurant\\\\themes\\\\hugo-hero-theme\\\\.git\")",
+      "Bash(rm \".gitmodules\" && git status --short | head -20)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant\\themes\\hugo-hero-theme",
+      "C:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant"
+    ]
+  }
+}

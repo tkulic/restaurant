@@ -1,0 +1,15 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          {{ partial "social.html" . }}
+          <ul class="footer-menu">
+            <li><a href="{{ .Site.BaseURL }}">Početna</a></li>
+            <li class="copyright">© {{ now.Format "2006" }} {{ .Title | default .Site.Title }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+[phone]
+other = "Telefon"
+
+[email]
+other = "Email"
+
+[address]
+other = "Adresa"
+
+[openingHours]
+other = "Radno vrijeme"
+
+[viewMenu]
+other = "Pogledaj jelovnik"
+
+[aboutUs]
+other = "O nama"
+
+[viewGallery]
+other = "Galerija"
+
+[contactUs]
+other = "Kontakt"
+
+[reservations]
+other = "Rezervacije"

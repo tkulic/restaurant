@@ -1,0 +1,30 @@
+email: 'konoba@dalmatina.hr'
+phone: '+385 21 000 000'
+businessName: 'Konoba Dalmatina'
+address: |
+  Ulica Kralja Tomislava 12
+  21000 Split
+hours:
+  - day: Ponedjeljak
+    open: '12:00'
+    close: '23:00'
+  - day: Utorak
+    open: '12:00'
+    close: '23:00'
+  - day: Srijeda
+    open: '12:00'
+    close: '23:00'
+  - day: Četvrtak
+    open: '12:00'
+    close: '23:00'
+  - day: Petak
+    open: '12:00'
+    close: '24:00'
+  - day: Subota
+    open: '12:00'
+    close: '24:00'
+  - day: Nedjelja
+    open: '12:00'
+    close: '22:00'
+latitude: '43.508133'
+longitude: '16.440193'

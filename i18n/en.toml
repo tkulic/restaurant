@@ -1,0 +1,26 @@
+[phone]
+other = "Phone"
+
+[email]
+other = "Email"
+
+[address]
+other = "Address"
+
+[openingHours]
+other = "Opening hours"
+
+[viewMenu]
+other = "View menu"
+
+[aboutUs]
+other = "About us"
+
+[viewGallery]
+other = "Gallery"
+
+[contactUs]
+other = "Contact"
+
+[reservations]
+other = "Reservations"

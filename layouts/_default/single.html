@@ -1,0 +1,70 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<div class="intro-small" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('{{ .Params.heroImage | default "images/hero.jpg" | relURL }}') center/cover no-repeat; min-height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+  <div>
+    <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">{{ .Title }}</h1>
+    <p style="font-size: 1.2rem;">{{ .Params.subtitle | default "Autentična dalmatinska kuhinja" }}</p>
+  </div>
+</div>
+
+<!-- Menu -->
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
+  <h2 class="text-center mb-5">Jelovnik</h2>
+  <div class="row">
+    {{ range where (where .Site.RegularPages "Type" "jelovnik") ".Params.featured" true }}
+    <div class="col-12 col-md-4 mb-4">
+      <div style="text-align: center;">
+        {{ if .Params.tabler_icon }}
+        <i class="ti {{ .Params.tabler_icon }}" style="font-size: 3rem; color: {{ .Params.icon_color | default "#C17C3B" }}; margin-bottom: 1rem;"></i>
+        {{ end }}
+        <h3>{{ .Title }}</h3>
+        <p style="color: #666;">{{ .Content | plainify | truncate 100 }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<!-- About -->
+<div style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ "images/promo.jpg" | relURL }}') center/cover no-repeat; padding: 100px 20px; color: white; text-align: center; min-height: 400px; display: flex; align-items: center;">
+  <div class="container">
+    <h2 class="mb-4" style="color: white;">O nama</h2>
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2">
+        <p style="color: #e0e0e0;">{{ .Params.about | default "Konoba je dio dalmatinske tradicije ukorijenjene u autentičnosti i kvaliteti. Svakodnevno biramo najsvježiju ribu, meso od lokalnih uzgajivača i povrće iz dalmatinskih vrtova. Kuhamo onako kako se kuhalo generacijama — s ljubavlju i bez žurbe." }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
+  <h2 class="text-center mb-5">Kontakt</h2>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <p><strong>Telefon:</strong> {{ .Params.phone }}</p>
+      <p><strong>Email:</strong> <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
+      <p><strong>Adresa:</strong><br>{{ .Params.address }}</p>
+      {{ if .Params.hours }}<p><strong>Radno vrijeme:</strong><br>{{ .Params.hours }}</p>{{ end }}
+    </div>
+    <div class="col-12 col-md-6">
+      {{ if and .Params.latitude .Params.longitude }}
+      <iframe
+        width="100%"
+        height="300"
+        frameborder="0"
+        scrolling="no"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=16.43%2C43.505%2C16.44%2C43.512&amp;layer=mapnik&amp;marker={{ .Params.latitude }}%2C{{ .Params.longitude }}"
+        style="border: 1px solid #ccc;">
+      </iframe>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}

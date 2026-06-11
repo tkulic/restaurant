@@ -1,0 +1,17 @@
+<div class="service service-summary">
+  {{ if .Params.tabler_icon }}
+  <div class="service-image">
+    <i class="ti {{ .Params.tabler_icon }}" style="font-size: 3rem; color: {{ .Params.icon_color | default "#C17C3B" }};"></i>
+  </div>
+  {{ else if .Params.icon }}
+  <div class="service-image">
+    <img height="80" width="80" src="{{ .Params.icon | relURL }}" alt="{{ .Title }}" />
+  </div>
+  {{ end }}
+  <div class="service-content">
+    <h2 class="service-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    {{ .Content | truncate 120 "..." }}
+  </div>
+</div>
