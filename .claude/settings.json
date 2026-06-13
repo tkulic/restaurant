@@ -41,7 +41,14 @@
       "Bash(rm \".gitmodules\" && git status --short | head -20)",
       "Bash(git config *)",
       "Bash(git ls-tree *)",
-      "Bash(rm -rf .git/modules && git config --file .git/config --remove-section submodule.themes/hugo-hero-theme 2>/dev/null; echo \"Cleaned up submodule references\")"
+      "Bash(rm -rf .git/modules && git config --file .git/config --remove-section submodule.themes/hugo-hero-theme 2>/dev/null; echo \"Cleaned up submodule references\")",
+      "Bash(curl -s http://localhost:1313/buffet-split-inn/)",
+      "Bash(curl -I http://localhost:1313/buffet-split-inn/)",
+      "WebFetch(domain:www.tripadvisor.com)",
+      "WebFetch(domain:konoba-kod-joze.eatbu.hr)",
+      "WebFetch(domain:foursquare.com)",
+      "WebFetch(domain:app.foursquare.com)",
+      "WebFetch(domain:map-of-croatia.com)"
     ],
     "additionalDirectories": [
       "c:\\Users\\D862\\OneDrive - IBsolution GmbH\\Desktop\\UI5_Quellcode\\restaurant\\themes\\hugo-hero-theme",
